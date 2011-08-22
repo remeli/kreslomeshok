@@ -94,10 +94,12 @@ img a{
 }
 /*slider*/
 .slider{
-  height:500px;
+  height:100%;
 }
+
 /*content*/
 .content{
+  clear:both;
   background:url("../images/gradient_content.png");
   background-repeat:repeat-x;
   background-color:#feb543;
@@ -197,5 +199,37 @@ img a{
 
 /*index*/
 .catalog_all{
-  
+  width:960px;
+  margin:0 auto;
+  margin-top:20px;
+  padding:5px;
+  float:left;
+}
+.product{
+  text-align:center;
+  width:305px;
+  margin-left:6px;
+  float:left;
+  margin-right:6px;
+  margin-bottom:20px;
+}
+.product .title{
+  font-size:18px;
+  color:#515151;
+  margin-bottom:10px;
+}
+.product .title a{
+  color:#515151;
+}
+.product .title a:hover{
+  color:#757575;
+}
+.product .info{
+  text-align:left;
+  margin-left:80px;
+  margin-top:10px;
+}
+.product .info p{
+  margin-bottom:6px;
+  font-size:11px;
 }

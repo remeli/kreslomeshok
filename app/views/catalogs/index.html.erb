@@ -2,12 +2,15 @@
   <% @catalogs.each do |catalog| %>
     <div class="product">
       <div class="title">
-        <%= catalog.title %>
+        <%= link_to catalog.title, catalog %>
+      </div>
+      <div class="photo">
+        <img src="http://chairshop.ru/img/p/57-151-large.jpg" alt="" width="150" height="150">
       </div>
       <div class="info">
-        <p>Цена: <%= catalog.price %></p>
+        <p>Цена: <%= catalog.price %> тенге</p>
         <p>Габариты: <%= catalog.dimensions %></p>
-        <p>Дата добавления: <%= date(catalog.created_at) %></p>
+        <p class="created_at">Дата добавления: <%= date(catalog.created_at) %></p>
       </div>
     </div>
   <% end %>  
