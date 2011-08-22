@@ -1,6 +1,6 @@
 class CatalogsController < ApplicationController
   def index
-    @catalogs = Catalog.all
+    @catalogs = Catalog.paginate :page => params[:page]
     @title = "Каталог"
   end
   
