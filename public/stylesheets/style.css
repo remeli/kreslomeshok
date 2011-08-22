@@ -10,7 +10,7 @@ body{
 }
 .header{
   height:175px;
-  background:url('img/gradient_header.png');
+  background:url('../images/gradient_header.png');
   background-repeat:repeat-x;
 }
 #logo{
@@ -39,38 +39,38 @@ img a{
   height:62px;
 }
 #menu a.main{
-  background:url("img/main_icon.png");
+  background:url("../images/main_icon.png");
   background-repeat:no-repeat;
   
 }
 #menu a.main:hover{
-  background:url("img/main_icon_hover.png");
+  background:url("../images/main_icon_hover.png");
   background-repeat:no-repeat;
 }
 #menu a.catalog{
-  background:url("img/catalog_icon.png");
+  background:url("../images/catalog_icon.png");
   background-repeat:no-repeat;
 }
 #menu a.catalog:hover{
-  background:url("img/catalog_icon_hover.png");
+  background:url("../images/catalog_icon_hover.png");
   background-repeat:no-repeat;
 }
 
 #menu a.news{
-  background:url("img/news_icon.png");
+  background:url("../images/news_icon.png");
   background-repeat:no-repeat;
   
 }
 #menu a.news:hover{
-  background:url("img/news_icon_hover.png");
+  background:url("../images/news_icon_hover.png");
   background-repeat:no-repeat;
 }
 #menu a.contacts{
-  background:url("img/contacts_icon.png");
+  background:url("../images/contacts_icon.png");
   background-repeat:no-repeat;
 }
 #menu a.contacts:hover{
-  background:url("img/contacts_icon_hover.png");
+  background:url("../images/contacts_icon_hover.png");
   background-repeat:no-repeat;
 }
 /*phone*/
@@ -80,7 +80,7 @@ img a{
   position:relative;
   top:10px;
   margin-left:110px;
-  background:url("img/contact_icon.png");
+  background:url("../images/contact_icon.png");
   background-repeat:no-repeat;
   width:200px;
   height:65px;
@@ -98,7 +98,7 @@ img a{
 }
 /*content*/
 .content{
-  background:url("img/gradient_content.png");
+  background:url("../images/gradient_content.png");
   background-repeat:repeat-x;
   background-color:#feb543;
 }
@@ -126,25 +126,25 @@ img a{
 .info_about .fabric{
   width:190px;
   height:200px;
-  background:url("img/fabric.png");
+  background:url("../images/fabric.png");
   background-repeat:no-repeat;
 }
 .info_about .zip{
   width:200px;
   height:200px;
-  background:url("img/zip.png");
+  background:url("../images/zip.png");
   background-repeat:no-repeat;
 }
 .info_about .penopolistirol{
   width:200px;
   height:200px;
-  background:url("img/penopolistirol.png");
+  background:url("../images/penopolistirol.png");
   background-repeat:no-repeat;  
 }
 .info_about .quality{
   width:200px;
   height:200px;
-  background:url("img/quality.png");
+  background:url("../images/quality.png");
   background-repeat:no-repeat;  
 }
 .video{
@@ -182,7 +182,7 @@ img a{
 /*footer*/
 .footer{
   height:120px;
-  background:url("img/footer.png");
+  background:url("../images/footer.png");
   background-color:#feb543;
 }
 .footer .copy{
