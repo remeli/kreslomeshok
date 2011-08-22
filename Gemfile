@@ -7,6 +7,8 @@ gem 'rails', '3.0.9'
 
 gem 'mysql2', '~> 0.2.6'
 gem 'will_paginate', '~> 3.0.pre4'
+gem "paperclip", "~> 2.3"
+
 group :console do
   gem "awesome_print"
 end

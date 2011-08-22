@@ -279,3 +279,45 @@ img a{
   -moz-border-radius:5px;
   border-radius:5px;
 }
+.show_catalog{
+  width:950px;
+  margin-left:20px;
+  margin-top:20px;
+  margin-bottom:20px;
+  padding:5px;
+  float:left;
+}
+.show_catalog .title{
+  padding:5px;
+  color:#fff;
+  font-size:16px;
+  text-align:center;
+  background:#feb543;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+  margin-bottom:5px;
+
+  
+}
+.show_catalog .photo{
+  padding:5px;
+  float:left;
+}
+.show_catalog .info{
+  padding:10px;
+  float:left;
+  color:#3E3E3E;
+  font-size:12px;
+  width:500px;
+}
+.show_catalog .info p{
+  margin-bottom:10px;
+}
+.show_catalog .info p span{
+  color:#000;
+  font-weight:bold;
+}
+.properties{
+  float:right;
+}
