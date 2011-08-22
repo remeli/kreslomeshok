@@ -7,24 +7,28 @@
 #   Mayor.create(:name => 'Daley', :city => cities.first)
 catalogs = Catalog.create(
   [
+    {
     :title => "Comedy Club кресло",
     :permalink => "comedy_club",
     :price => 25000,
     :dimensions => "140x100",
     :description => "Кресло бестселлер"
-  ],
-  [
+    },
+
+    {
     :title => "Comedy Club кресло 2",
     :permalink => "comedy_club2",
     :price => 25000,
     :dimensions => "140x100",
     :description => "Кресло бестселлер"
-  ],
-  [
+    },
+    
+    {
     :title => "Comedy Club кресло3",
     :permalink => "comedy_club3",
     :price => 25000,
     :dimensions => "140x100",
     :description => "Кресло бестселлер"
-  ],
+    }
+  ]
 )
