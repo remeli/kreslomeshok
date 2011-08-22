@@ -8,4 +8,8 @@ module ApplicationHelper
       @base_title
     end
   end
+  
+  def date(object)
+    object.to_date
+  end
 end

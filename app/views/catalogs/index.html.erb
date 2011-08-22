@@ -1,3 +1,15 @@
-<% @catalogs.each do |catalog| %>
-  <%= catalog.title %>
-<% end %>
+<div class="catalog_all">
+  <% @catalogs.each do |catalog| %>
+    <div class="product">
+      <div class="title">
+        <%= catalog.title %>
+      </div>
+      <div class="info">
+        <p>Цена: <%= catalog.price %></p>
+        <p>Габариты: <%= catalog.dimensions %></p>
+        <p>Дата добавления: <%= date(catalog.created_at) %></p>
+      </div>
+    </div>
+  <% end %>  
+</div>
+
