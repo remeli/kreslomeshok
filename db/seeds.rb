@@ -24,8 +24,54 @@ catalogs = Catalog.create(
     },
     
     {
-    :title => "Comedy Club кресло3",
+    :title => "Comedy Club кресло 3",
     :permalink => "comedy_club3",
+    :price => 25000,
+    :dimensions => "140x100",
+    :description => "Кресло бестселлер"
+    }
+    {
+    :title => "Comedy Club кресло 4",
+    :permalink => "comedy_club4",
+    :price => 25000,
+    :dimensions => "140x100",
+    :description => "Кресло бестселлер"
+    },
+
+    {
+    :title => "Comedy Club кресло 5",
+    :permalink => "comedy_club5",
+    :price => 25000,
+    :dimensions => "140x100",
+    :description => "Кресло бестселлер"
+    },
+    
+    {
+    :title => "Comedy Club кресло 6",
+    :permalink => "comedy_club6",
+    :price => 25000,
+    :dimensions => "140x100",
+    :description => "Кресло бестселлер"
+    }
+    {
+    :title => "Comedy Club кресло 7",
+    :permalink => "comedy_club7",
+    :price => 25000,
+    :dimensions => "140x100",
+    :description => "Кресло бестселлер"
+    },
+
+    {
+    :title => "Comedy Club кресло 8",
+    :permalink => "comedy_club8",
+    :price => 25000,
+    :dimensions => "140x100",
+    :description => "Кресло бестселлер"
+    },
+    
+    {
+    :title => "Comedy Club кресло9",
+    :permalink => "comedy_club9",
     :price => 25000,
     :dimensions => "140x100",
     :description => "Кресло бестселлер"
