@@ -6,7 +6,7 @@ class CatalogsController < ApplicationController
   
   def show
     @catalog = Catalog.find(params[:id])
-    @title = @catalog.name
+    @title = @catalog.title
   end
   
   def new
@@ -31,7 +31,7 @@ class CatalogsController < ApplicationController
   def update
     @catalog = Catalog.find(params[:id])
     if @catalog.update_attributes(params[:catalog])
-      redirect_to(@catalof, :notice => "Продукт успешно обновлен")
+      redirect_to(@catalog, :notice => "Продукт успешно обновлен")
     else
       render(:action => "edit")
     end
