@@ -1,7 +1,6 @@
 Kreslomeshok::Application.routes.draw do
   get "pages/index"
-  get "pages/contacts"
-
+  match "contacts" => "pages#contacts", :as => :contacts
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
