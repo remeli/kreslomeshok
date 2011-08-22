@@ -1,0 +1,194 @@
+body{
+  background:#3E3E3E;
+  font-size:12px;
+  font-family:Tahoma, Arial, sans-serif;
+}
+.wrapper{
+  width:1000px;
+  margin:0 auto;
+  background:#fff;
+}
+.header{
+  height:175px;
+  background:url('img/gradient_header.png');
+  background-repeat:repeat-x;
+}
+#logo{
+  width:210px;
+  margin-left:10px;
+  float:left;
+}
+img a{
+  border:0;
+  outline:none;
+}
+/* menu */
+#menu{
+  float:left;
+  position:relative;
+  top:70px;
+  left:70px;
+}
+#menu ul li{
+  float:left;
+  margin-right:10px;
+}
+#menu a{
+  display:block;
+  width:106px;
+  height:62px;
+}
+#menu a.main{
+  background:url("img/main_icon.png");
+  background-repeat:no-repeat;
+  
+}
+#menu a.main:hover{
+  background:url("img/main_icon_hover.png");
+  background-repeat:no-repeat;
+}
+#menu a.catalog{
+  background:url("img/catalog_icon.png");
+  background-repeat:no-repeat;
+}
+#menu a.catalog:hover{
+  background:url("img/catalog_icon_hover.png");
+  background-repeat:no-repeat;
+}
+
+#menu a.news{
+  background:url("img/news_icon.png");
+  background-repeat:no-repeat;
+  
+}
+#menu a.news:hover{
+  background:url("img/news_icon_hover.png");
+  background-repeat:no-repeat;
+}
+#menu a.contacts{
+  background:url("img/contacts_icon.png");
+  background-repeat:no-repeat;
+}
+#menu a.contacts:hover{
+  background:url("img/contacts_icon_hover.png");
+  background-repeat:no-repeat;
+}
+/*phone*/
+#phone{
+  float:left;
+  width:200px;
+  position:relative;
+  top:10px;
+  margin-left:110px;
+  background:url("img/contact_icon.png");
+  background-repeat:no-repeat;
+  width:200px;
+  height:65px;
+}
+#phone #text{
+  position:relative;
+  top:10px;
+  left:80px;
+  color:#fff;
+  font-size:14px;
+}
+/*slider*/
+.slider{
+  height:500px;
+}
+/*content*/
+.content{
+  background:url("img/gradient_content.png");
+  background-repeat:repeat-x;
+  background-color:#feb543;
+}
+.info_about{
+  width:900px;
+  margin:0 auto;
+  height:260px;
+  padding-top:50px;
+}
+.info_about>ul>li{
+  float:left;
+  margin-left:10px;
+  margin-right:16px;
+}
+.info_about .text{
+  color:#fff;
+  font-size:12px;
+  margin-top:10px;
+}
+.info_about .text ul li{
+  margin-left:50px;
+  margin-bottom:5px;
+  list-style-type: circle;
+}
+.info_about .fabric{
+  width:190px;
+  height:200px;
+  background:url("img/fabric.png");
+  background-repeat:no-repeat;
+}
+.info_about .zip{
+  width:200px;
+  height:200px;
+  background:url("img/zip.png");
+  background-repeat:no-repeat;
+}
+.info_about .penopolistirol{
+  width:200px;
+  height:200px;
+  background:url("img/penopolistirol.png");
+  background-repeat:no-repeat;  
+}
+.info_about .quality{
+  width:200px;
+  height:200px;
+  background:url("img/quality.png");
+  background-repeat:no-repeat;  
+}
+.video{
+  clear:both;
+  margin-left:50px;
+  margin-top:50px;
+  height:400px;
+
+}
+.video .title{
+  font-size:18px;
+  color:#fff;
+  background:#70C148;
+  padding:5px;
+  padding-bottom:7px;
+  width:300px;
+}
+.video .content_video{
+  margin-top:20px;
+  padding-bottom:20px;
+  float:left;
+  width:470px;
+}
+.video .about_beanbag{
+  width:400px;
+  font-size:12px;
+  color:#fff;
+  padding:10px;
+  margin-left:20px;
+  margin-top:120px;
+  height:100px;
+  float:left;
+  line-height:16px;
+}
+/*footer*/
+.footer{
+  height:120px;
+  background:url("img/footer.png");
+  background-color:#feb543;
+}
+.footer .copy{
+  float:right;
+  font-size:14px;
+  color:#fff;
+  margin-top:70px;
+  margin-right:20px;
+}
