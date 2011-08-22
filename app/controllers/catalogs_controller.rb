@@ -5,7 +5,7 @@ class CatalogsController < ApplicationController
   end
   
   def show
-    @catalog = Catalog.find(params[:id])
+    @catalog = Catalog.find_by_permalink(params[:id])
     @title = @catalog.title
   end
   
@@ -24,12 +24,12 @@ class CatalogsController < ApplicationController
   end
   
   def edit
-    @catalog = Catalog.find(params[:id])
+    @catalog = Catalog.find_by_permalink(params[:id])
     @title = "Редактирование продукта"
   end
   
   def update
-    @catalog = Catalog.find(params[:id])
+    @catalog = Catalog.find_by_permalink(params[:id])
     if @catalog.update_attributes(params[:catalog])
       redirect_to(@catalog, :notice => "Продукт успешно обновлен")
     else
@@ -38,7 +38,7 @@ class CatalogsController < ApplicationController
   end
   
   def destroy
-    @catalog = Catalog.find(params[:id])
+    @catalog = Catalog.find_by_permalink(params[:id])
     @catalog.destroy
     redirect_to(catalogs_url)
   end
