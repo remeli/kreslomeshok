@@ -1,14 +1,28 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru">
 <head>
-  <title>Kreslomeshok</title>
+  <title><%= title %></title>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
   <%= stylesheet_link_tag :all %>
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
 </head>
 <body>
-
-<%= yield %>
-
+    <div class="wrapper">
+      <div class="header">
+        <div id="logo">
+          <a href="#"><img src="img/logo.png" alt="KresloMeshok.kz" /></a>
+        </div>
+        <%= render('layouts/menu') %>
+        <div id="phone">
+          <span id="text">Наш телефон:<br />8(777)694-84-08</span>
+        </div>
+      </div>
+      <div class="slider">
+        <%= yield %>
+      </div>
+      <%= render('layouts/bottomcontent') %>
+      <%= render('layouts/footer') %>
+    </div>
 </body>
 </html>
