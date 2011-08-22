@@ -29,7 +29,7 @@ catalogs = Catalog.create(
     :price => 25000,
     :dimensions => "140x100",
     :description => "Кресло бестселлер"
-    }
+    },
     {
     :title => "Comedy Club кресло 4",
     :permalink => "comedy_club4",
@@ -52,7 +52,7 @@ catalogs = Catalog.create(
     :price => 25000,
     :dimensions => "140x100",
     :description => "Кресло бестселлер"
-    }
+    },
     {
     :title => "Comedy Club кресло 7",
     :permalink => "comedy_club7",
