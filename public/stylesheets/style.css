@@ -163,6 +163,9 @@ img a{
   padding:5px;
   padding-bottom:7px;
   width:300px;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
 }
 .video .content_video{
   margin-top:20px;
@@ -320,4 +323,20 @@ img a{
 }
 .properties{
   float:right;
+}
+.comments{
+  clear:both;
+  width:950px;
+  margin:0 auto;
+  margin-top:5px;
+  margin-bottom:20px;  
+}
+.comments .title{
+  padding:5px;
+  color:#fff;
+  background:#70C148;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+  margin-bottom:10px;
 }
