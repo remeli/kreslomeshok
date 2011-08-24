@@ -12,4 +12,9 @@ module ApplicationHelper
   def date(object)
     object.to_date
   end
+  
+  def error_messages_for(object)
+    render(:partial => "shared/error_messages", :locals => {:object => object})
+  end
+    
 end
