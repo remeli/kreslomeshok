@@ -5,7 +5,6 @@ class CreateCatalogs < ActiveRecord::Migration
       t.string :permalink, :null => false
       t.float :price
       t.string :dimensions
-      t.string :photo_url
       t.text :description
       t.timestamps
     end
@@ -13,7 +12,7 @@ class CreateCatalogs < ActiveRecord::Migration
   end
 
   def self.down
-    remove_index :catalogs, :column_name
+    remove_index :catalogs, :title
     drop_table :catalogs
   end
 end

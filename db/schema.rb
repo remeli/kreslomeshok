@@ -17,7 +17,6 @@ ActiveRecord::Schema.define(:version => 20110822054232) do
     t.string   "permalink",   :null => false
     t.float    "price"
     t.string   "dimensions"
-    t.string   "photo_url"
     t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
