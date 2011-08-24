@@ -340,3 +340,59 @@ img a{
   border-radius:5px;
   margin-bottom:10px;
 }
+
+/*admin*/
+/*form catalog*/
+.form{
+  margin-left:20px;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+.form .title{
+  background:#70C148;
+  color:#fff;
+  padding:5px;
+  width:400px;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+}
+.form .field{
+  margin-top:5px;
+  margin-bottom:5px;
+}
+.form .field input, textarea{
+  margin-top:5px;
+}
+.errorExplanation{
+  border:1px solid #99293E;
+  padding:5px;
+  width:400px;
+  margin:10px 10px 10px 0px;
+  color:#99293E;
+}
+.errorExplanation ul li{
+  margin-bottom:3px;
+  margin-top:3px;
+}
+.field_with_errors label{
+  background:#99293E;
+  width:300xp;
+  color:#fff;
+  padding:5px;
+}
+.field_with_errors input{
+  margin-top:5px;
+  margin-bottom:15px;
+}
+.notice{
+  background:#70C148;
+  color:#fff;
+  padding:5px;
+  margin:0 auto;
+  width:400px;
+  margin-bottom:10px;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;  
+}

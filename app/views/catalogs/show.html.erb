@@ -1,4 +1,9 @@
 <div class="show_catalog">
+  <% if notice %>
+    <div class="notice">
+      <%= notice %>
+    </div>
+  <% end %>
   <div class="title">
     <%= @catalog.title %>
   </div>
