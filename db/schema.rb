@@ -10,16 +10,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110822054232) do
+ActiveRecord::Schema.define(:version => 20110824110803) do
 
   create_table "catalogs", :force => true do |t|
-    t.string   "title",       :null => false
-    t.string   "permalink",   :null => false
+    t.string   "title",              :null => false
+    t.string   "permalink",          :null => false
     t.float    "price"
     t.string   "dimensions"
     t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
+    t.datetime "photo_updated_at"
   end
 
   add_index "catalogs", ["title"], :name => "index_catalogs_on_title"

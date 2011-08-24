@@ -8,7 +8,7 @@
     <%= @catalog.title %>
   </div>
   <div class="photo">
-    <img src="http://chairshop.ru/img/p/57-151-large.jpg" alt="" >
+    <%= image_tag @catalog.photo.url(:medium) %>
   </div>
   <div class="info">
     <p><span>Цена:</span> <%= @catalog.price %></p>

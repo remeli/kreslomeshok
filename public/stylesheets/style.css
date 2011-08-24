@@ -321,6 +321,14 @@ img a{
   color:#000;
   font-weight:bold;
 }
+.catalog_all .product .actions a{
+  font-size:11px;
+  color:#ccc;
+}
+.catalog_all .product .actions a:hover{
+  font-size:11px;
+  color:#000;
+}
 .properties{
   float:right;
 }
