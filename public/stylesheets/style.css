@@ -3,6 +3,9 @@ body{
   font-size:12px;
   font-family:Tahoma, Arial, sans-serif;
 }
+a{
+  color:#ccc;
+}
 .wrapper{
   width:1000px;
   margin:0 auto;
@@ -429,4 +432,19 @@ img a{
 }
 .error_route a{
   color:#fff;
+}
+/*main_page*/
+.main_page{
+  padding:5px;
+  margin-top:5px;
+  margin-bottom:5px;
+}
+.main_page .intro{
+  padding:15px;
+  text-align:justify;
+  font-size:14px;
+  line-height:22px;
+}
+.main_page #instruction{
+  display:none;
 }
