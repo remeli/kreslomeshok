@@ -152,12 +152,34 @@ img a{
   background:url("../images/quality.png");
   background-repeat:no-repeat;  
 }
-.video{
+.social{
   clear:both;
   margin-left:50px;
-  margin-top:50px;
+  margin-top:60px;
+}
+.social .title{
+  font-size:18px;
+  color:#fff;
+  background:#70C148;
+  padding:5px;
+  padding-bottom:7px;
+  width:300px;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+}
+.social .links{
+  color:#fff;
+  margin-top:10px;
+}
+.social a{
+  font-size:18px;
+  color:#fff;
+}
+.video{
+  margin-left:50px;
+  margin-top:40px;
   height:400px;
-
 }
 .video .title{
   font-size:18px;
