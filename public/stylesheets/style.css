@@ -348,7 +348,18 @@ img a{
   border-radius:5px;
   margin-bottom:10px;
 }
-
+/*contacts*/
+.my_contacts{
+  padding:10px;
+  margin:40px;
+}
+.my_contacts .text{
+  font-size:16px;
+}
+.my_contacts .cont{
+  margin-top:10px;
+  font-size:14px;
+}
 /*admin*/
 /*form catalog*/
 .form{

@@ -1,4 +1,9 @@
 <div class="catalog_all">
+  <% if notice %>
+    <div class="notice">
+      <%= notice %>
+    </div>
+  <% end %>
   <% @catalogs.each do |catalog| %>
     <div class="product">
       <div class="title">
