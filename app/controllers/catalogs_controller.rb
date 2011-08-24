@@ -1,6 +1,9 @@
 class CatalogsController < ApplicationController
   def index
     @catalogs = Catalog.paginate :page => params[:page]
+    if @catalogs.size == 0
+      flash[:notice] = "Пока ничего нет"
+    end
     @title = "Каталог"
   end
   

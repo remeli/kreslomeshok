@@ -3,7 +3,7 @@ class CreateCatalogs < ActiveRecord::Migration
     create_table :catalogs do |t|
       t.string :title, :null => false
       t.string :permalink, :null => false
-      t.float :price
+      t.integer :price
       t.string :dimensions
       t.text :description
       t.timestamps

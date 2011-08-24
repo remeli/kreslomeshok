@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(:version => 20110824110803) do
   create_table "catalogs", :force => true do |t|
     t.string   "title",              :null => false
     t.string   "permalink",          :null => false
-    t.float    "price"
+    t.integer  "price"
     t.string   "dimensions"
     t.text     "description"
     t.datetime "created_at"
