@@ -54,4 +54,5 @@ class PostsController < ApplicationController
     @post.destroy
     redirect_to(posts_url)
   end
+  
 end
