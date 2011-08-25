@@ -5,6 +5,7 @@ Kreslomeshok::Application.routes.draw do
   
   resources :catalogs
   resources :posts
+  resources :users
   
   #404
   match '*a', :to => 'errors#routing'

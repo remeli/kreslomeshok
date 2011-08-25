@@ -120,3 +120,16 @@ posts = Post.create(
     }
   ]
 )
+
+#users
+users = User.create(
+  [
+    {:name => "lagox", :password => "12345678", :password_confirmation => "12345678"},
+    {:name => "aagox", :password => "12345678", :password_confirmation => "12345678"},
+    {:name => "sagox", :password => "12345678", :password_confirmation => "12345678"},
+    {:name => "dagox", :password => "12345678", :password_confirmation => "12345678"},
+    {:name => "4agox", :password => "12345678", :password_confirmation => "12345678"},
+    {:name => "gagox", :password => "12345678", :password_confirmation => "12345678"},
+    {:name => "qagox", :password => "12345678", :password_confirmation => "12345678"},                      
+  ]
+)

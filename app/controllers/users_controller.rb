@@ -15,8 +15,8 @@ class UsersController < ApplicationController
   def show
     begin
       @user = User.find(params[:id])
-      @title = @user.title
-    rescue
+      @title = @user.name
+    rescue ActiveRecord::RecordNotFound
       redirect_to(users_path, :notice => "Нет такой новости")
     end
   end
@@ -29,7 +29,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(params[:user])
     if @user.save
-      redirect_to(@user, :notice => "Пользователь успешно добавлен")
+      redirect_to(users_url, :notice => "Пользователь успешно добавлен")
     else
       render(:action => "new")
     end
@@ -43,7 +43,7 @@ class UsersController < ApplicationController
   def update
     @user = User.find(params[:id])
     if @user.update_attributes(params[:user])
-      redirect_to(@user, :notice => "Пользователь успешно добавлен")
+      redirect_to(users_url, :notice => "Пользователь успешно добавлен")
     else
       render(:action => "edit")
     end

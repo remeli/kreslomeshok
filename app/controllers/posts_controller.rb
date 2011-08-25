@@ -16,7 +16,7 @@ class PostsController < ApplicationController
     begin
       @post = Post.find(params[:id])
       @title = @post.title
-    rescue
+    rescue ActiveRecord::RecordNotFound
       redirect_to(posts_path, :notice => "Нет такой новости")
     end
   end

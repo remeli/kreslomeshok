@@ -1,8 +1,11 @@
 require 'digest/sha2'
 
 class User < ActiveRecord::Base
+  
+  default_scope order("users.id DESC")
+  
   validates :name, :presence => true, :uniqueness => true
- 
+
   validates :password, :confirmation => true
   attr_accessor :password_confirmation
   attr_reader   :password

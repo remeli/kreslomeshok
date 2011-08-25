@@ -557,3 +557,22 @@ float:left;
   width:200px;
   text-align:center;
 }
+/*users*/
+.users{
+  margin:20px;
+  padding:5px;  
+}
+.users .user{
+  margin-bottom:20px;
+  border:1px dashed #ccc;
+  padding:10px;
+  width:300px;
+}
+.users .user a{
+  color:#414141;
+}
+.users .user .info{
+  font-size:11px;
+  color:#ccc;
+  margin-top:5px;
+}

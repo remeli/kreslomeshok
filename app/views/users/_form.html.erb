@@ -1,0 +1,18 @@
+<%= form_for @user do |f| %>
+  <%= error_messages_for(@user) %>
+  <div class="field">
+    <%= f.label :name, "Логин:" %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :password, "Пароль:" %><br />
+    <%= f.password_field :password %>
+  </div>
+  <div class="field">
+    <%= f.label :password_confirmation, "Повторите пароль:" %><br />
+    <%= f.password_field :password_confirmation %>
+  </div>  
+  <div class="submit">
+    <%= f.submit "Отправить" %>
+  </div>
+<% end %>
