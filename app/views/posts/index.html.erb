@@ -1,0 +1,15 @@
+<div class="posts">
+  <% @posts.each do |post| %>
+    <div class="post">
+      <div class="title">
+        <%= post.title %>
+      </div>
+      <div class="body">
+        <%= post.body %>
+      </div>
+      <div class="info">
+        <%= date(post.created_at) %>
+      </div>
+    </div>
+  <% end %>
+</div>
