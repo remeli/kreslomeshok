@@ -562,16 +562,16 @@ float:left;
   margin:20px;
   padding:5px;  
 }
-.users .user{
+.user{
   margin-bottom:20px;
   border:1px dashed #ccc;
   padding:10px;
   width:300px;
 }
-.users .user a{
+.user a{
   color:#414141;
 }
-.users .user .info{
+.user .info{
   font-size:11px;
   color:#ccc;
   margin-top:5px;

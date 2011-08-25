@@ -1,0 +1,15 @@
+<div class="users">
+  <% if notice %>
+    <div class="notice">
+      <%= notice %>
+    </div>
+  <% end %>
+    <div class="user">
+      <p>Логин: <%= @user.name %></p>
+      <p class="info">Дата добавления: <%= date(@user.created_at) %></p>
+      <div class="actions">
+        <%= link_to "Редактировать", edit_user_path(@user) %>
+        <%= link_to "Удалить", @user, :confirm => "Уверены?", :method => :delete %>
+      </div>
+    </div>
+</div>
