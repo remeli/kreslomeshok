@@ -12,7 +12,8 @@ catalogs = Catalog.create(
     :permalink => "comedy_club",
     :price => 25000,
     :dimensions => "140x100",
-    :description => "Кресло бестселлер"
+    :description => "Кресло бестселлер",
+    :photo_file_name => "kreslo-grusha_summer_blue_311.jpg"
     },
 
     {
@@ -20,7 +21,8 @@ catalogs = Catalog.create(
     :permalink => "comedy_club2",
     :price => 25000,
     :dimensions => "140x100",
-    :description => "Кресло бестселлер"
+    :description => "Кресло бестселлер",
+    :photo_file_name => "kreslo-grusha_summer_blue_311.jpg"
     },
     
     {
@@ -28,14 +30,16 @@ catalogs = Catalog.create(
     :permalink => "comedy_club3",
     :price => 25000,
     :dimensions => "140x100",
-    :description => "Кресло бестселлер"
+    :description => "Кресло бестселлер",
+    :photo_file_name => "kreslo-grusha_summer_blue_311.jpg"
     },
     {
     :title => "Comedy Club кресло 4",
     :permalink => "comedy_club4",
     :price => 25000,
     :dimensions => "140x100",
-    :description => "Кресло бестселлер"
+    :description => "Кресло бестселлер",
+    :photo_file_name => "kreslo-grusha_summer_blue_311.jpg"
     },
 
     {
@@ -43,7 +47,8 @@ catalogs = Catalog.create(
     :permalink => "comedy_club5",
     :price => 25000,
     :dimensions => "140x100",
-    :description => "Кресло бестселлер"
+    :description => "Кресло бестселлер",
+    :photo_file_name => "kreslo-grusha_summer_blue_311.jpg"
     },
     
     {
@@ -51,14 +56,16 @@ catalogs = Catalog.create(
     :permalink => "comedy_club6",
     :price => 25000,
     :dimensions => "140x100",
-    :description => "Кресло бестселлер"
+    :description => "Кресло бестселлер",
+    :photo_file_name => "kreslo-grusha_summer_blue_311.jpg"
     },
     {
     :title => "Comedy Club кресло 7",
     :permalink => "comedy_club7",
     :price => 25000,
     :dimensions => "140x100",
-    :description => "Кресло бестселлер"
+    :description => "Кресло бестселлер",
+    :photo_file_name => "kreslo-grusha_summer_blue_311.jpg"
     },
 
     {
@@ -66,7 +73,8 @@ catalogs = Catalog.create(
     :permalink => "comedy_club8",
     :price => 25000,
     :dimensions => "140x100",
-    :description => "Кресло бестселлер"
+    :description => "Кресло бестселлер",
+    :photo_file_name => "kreslo-grusha_summer_blue_311.jpg"
     },
     
     {
@@ -74,7 +82,8 @@ catalogs = Catalog.create(
     :permalink => "comedy_club9",
     :price => 25000,
     :dimensions => "140x100",
-    :description => "Кресло бестселлер"
+    :description => "Кресло бестселлер",
+    :photo_file_name => "kreslo-grusha_summer_blue_311.jpg"
     }
   ]
 )
