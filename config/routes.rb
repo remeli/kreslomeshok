@@ -1,7 +1,10 @@
 Kreslomeshok::Application.routes.draw do
+
   get "pages/index"
   match "contacts" => "pages#contacts", :as => :contacts
+  
   resources :catalogs
+  resources :news
   
   #404
   match '*a', :to => 'errors#routing'
