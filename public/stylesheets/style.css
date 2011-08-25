@@ -576,3 +576,17 @@ float:left;
   color:#ccc;
   margin-top:5px;
 }
+.adminka{
+  margin:20px;
+}
+.adminka h1{
+  font-size:20px;
+}
+.adminka .branch p{
+  font-size:16px;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+.adminka .branch a{
+  color:#000;
+}
