@@ -1,0 +1,21 @@
+<div>
+  <% if flash[:alert] %>
+    <p id="notice"><%= flash[:alert] %></p>
+  <% end %>
+  <%= form_tag do %>
+  <fieldset>
+    <legend>Вход:</legend>
+    <div class="field">
+      <label for="name">Имя:</label>
+      <%= text_field_tag :name, params[:name] %>
+    </div>
+    <div class="field">
+      <label for="password">Пароль:</label>
+      <%= password_field_tag :password, params[:password] %>
+    </div>
+    <div class="submit">
+      <%= submit_tag "Войти" %>
+    </div>
+  </fieldset>
+  <% end %>
+</div>
