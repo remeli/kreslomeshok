@@ -220,9 +220,27 @@ img a{
   font-size:14px;
   color:#fff;
   margin-top:70px;
-  margin-right:20px;
+  margin-right:10px;
 }
-
+.footer .developer{
+float:left;
+  margin-top:70px;
+ text-align:right;
+ padding:5px;
+ color:#fff;
+ font-size:13px;
+ background:#000;
+ width:140px;
+ 
+}
+.footer .developer a .first{
+  font-weight:bold;
+  color:#922;
+}
+.footer .developer a{
+  color:#fff;
+  text-decoration:none;
+}
 /*catalog*/
 
 /*index*/
