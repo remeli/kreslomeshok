@@ -505,4 +505,5 @@ float:left;
 }
 .main_page #instruction{
   display:none;
+  margin-left:15px;
 }
