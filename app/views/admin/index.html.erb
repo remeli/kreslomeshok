@@ -6,4 +6,7 @@
     <%= link_to "Каталог", catalogs_path %><br />
     <%= link_to "Новости", posts_path %>
   </div>  
+  <div class="actions">
+    <%= link_to "Выход", logout_path, :confirm => "Уверены?", :method => :delete %>
+  </div>
 </div>

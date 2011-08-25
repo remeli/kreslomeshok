@@ -17,10 +17,12 @@
         <p>Габариты: <%= catalog.dimensions %></p>
         <p class="created_at">Дата добавления: <%= date(catalog.created_at) %></p>
       </div>
-      <div class="actions">
-        <%= link_to "Редактировать", edit_catalog_path(catalog) %>
-        <%= link_to "Удалить", catalog, :confirm => "Уверены?", :method => :delete %>
-      </div>
+      <% if session[:user_id] %>
+        <div class="actions">
+          <%= link_to "Редактировать", edit_catalog_path(catalog) %>
+          <%= link_to "Удалить", catalog, :confirm => "Уверены?", :method => :delete %>
+        </div>
+      <% end %>
     </div>
   <% end %>  
 </div>

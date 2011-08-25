@@ -8,10 +8,12 @@
   <div class="info">
     Дата добавления: <%= date(@post.created_at)  %>
   </div>
-  <div class="actions">
-    <%= link_to "Редактировать", edit_post_path(@post) %>
-    <%= link_to "Удалить", @post, :confirm => "Уверены?", :method => :delete %>
-  </div>
+  <% if session[:user_id] %>
+    <div class="actions">
+      <%= link_to "Редактировать", edit_post_path(@post) %>
+      <%= link_to "Удалить", @post, :confirm => "Уверены?", :method => :delete %>
+    </div>
+  <% end %>
 </div>
 <div class="comments">
   <p class="title">Комментарии:</p>

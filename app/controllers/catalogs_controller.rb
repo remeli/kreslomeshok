@@ -1,4 +1,5 @@
 class CatalogsController < ApplicationController
+  before_filter :authorize, :only => [:new, :edit, :create, :update, :destroy]
   def index
     begin
       @catalogs = Catalog.paginate :page => params[:page]
