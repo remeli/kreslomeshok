@@ -1,11 +1,15 @@
 class PostsController < ApplicationController
   
   def index
-    @posts = Post.paginate :page => params[:page]
-    if @posts.size == 0
-      flash[:notice] = "Пока ничего нет"
+    begin
+      @posts = Post.paginate :page => params[:page]
+      if @posts.size == 0
+        flash[:notice] = "Пока ничего нет"
+      end
+      @title = "Новости"
+    rescue ArgumentError
+      redirect_to(posts_url, :notice => "Хакер? :)")
     end
-    @title = "Новости"
   end
   
   def show

@@ -1,10 +1,14 @@
 class CatalogsController < ApplicationController
   def index
-    @catalogs = Catalog.paginate :page => params[:page]
-    if @catalogs.size == 0
-      flash[:notice] = "Пока ничего нет"
+    begin
+      @catalogs = Catalog.paginate :page => params[:page]
+      if @catalogs.size == 0
+        flash[:notice] = "Пока ничего нет"
+      end
+      @title = "Каталог"      
+    rescue ArgumentError
+      redirect_to(catalogs_url, :notice => "Хакер? :)")
     end
-    @title = "Каталог"
   end
   
   def show
