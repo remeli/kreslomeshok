@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110824110803) do
+ActiveRecord::Schema.define(:version => 20110825061824) do
 
   create_table "catalogs", :force => true do |t|
     t.string   "title",              :null => false
@@ -27,5 +27,12 @@ ActiveRecord::Schema.define(:version => 20110824110803) do
   end
 
   add_index "catalogs", ["title"], :name => "index_catalogs_on_title"
+
+  create_table "posts", :force => true do |t|
+    t.string   "title"
+    t.text     "body"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end
