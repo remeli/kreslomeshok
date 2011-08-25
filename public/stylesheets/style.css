@@ -364,11 +364,11 @@ float:left;
   color:#000;
   font-weight:bold;
 }
-.catalog_all .product .actions a{
+.actions a{
   font-size:11px;
   color:#ccc;
 }
-.catalog_all .product .actions a:hover{
+.actions a:hover{
   font-size:11px;
   color:#000;
 }
@@ -506,4 +506,54 @@ float:left;
 .main_page #instruction{
   display:none;
   margin-left:15px;
+}
+/*news*/
+.posts{
+  margin:20px;
+  padding:10px;
+  line-height:15px;
+}
+.posts .post{
+  margin-bottom:20px;
+}
+.posts .post .title{
+  margin-bottom:5px;
+}
+.posts .post .title a{
+  font-size:16px;
+  color:#535353;
+}
+.posts .post .body{
+  text-align:justify;
+  color:#000;
+}
+.posts .post .info{
+  margin-top:5px;
+  font-size:11px;
+  color:#ccc;
+}
+.one_post{
+  margin:20px;
+  padding:10px;
+  line-height:15px;
+}
+.one_post .title{
+  font-size:18px;
+  text-align:center;
+  margin-bottom:10px;
+}
+.one_post .body{
+  padding:10px;
+}
+.one_post .info{
+  margin-left:10px;
+  font-size:11px;
+  background:#ccc;
+  color:#555;
+  padding:5px;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+  width:200px;
+  text-align:center;
 }

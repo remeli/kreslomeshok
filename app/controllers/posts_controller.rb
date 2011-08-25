@@ -1,15 +1,25 @@
 class PostsController < ApplicationController
   
   def index
-    @posts = Post.all
+    @posts = Post.paginate :page => params[:page]
+    if @posts.size == 0
+      flash[:notice] = "Пока ничего нет"
+    end
+    @title = "Новости"
   end
   
   def show
-    @post = Post.find(params[:id])
+    begin
+      @post = Post.find(params[:id])
+      @title = @post.title
+    rescue
+      redirect_to(posts_path, :notice => "Нет такой новости")
+    end
   end
   
   def new
     @post = Post.new
+    @title = "Новая новость"
   end
   
   def create
@@ -23,6 +33,7 @@ class PostsController < ApplicationController
   
   def edit
     @post = Post.find(params[:id])
+    @title = "Редактирование новости"
   end
   
   def update

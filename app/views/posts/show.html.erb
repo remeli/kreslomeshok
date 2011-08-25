@@ -1,0 +1,15 @@
+<div class="one_post">
+  <div class="title">
+    <%= @post.title %>
+  </div>
+  <div class="body">
+    <%= raw(@post.body) %>
+  </div>
+  <div class="info">
+    Дата добавления: <%= date(@post.created_at)  %>
+  </div>
+  <div class="actions">
+    <%= link_to "Редактировать", edit_post_path(@post) %>
+    <%= link_to "Удалить", @post, :confirm => "Уверены?", :method => :delete %>
+  </div>
+</div>

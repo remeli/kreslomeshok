@@ -1,15 +1,25 @@
 <div class="posts">
+  <% if notice %>
+    <div class="notice">
+      <%= notice %>
+    </div>
+  <% end %>
   <% @posts.each do |post| %>
     <div class="post">
       <div class="title">
-        <%= post.title %>
+        <%= link_to post.title, post %>
       </div>
       <div class="body">
         <%= post.body %>
       </div>
       <div class="info">
-        <%= date(post.created_at) %>
+        Дата публикации: <%= date(post.created_at) %>
+      </div>
+      <div class="actions">
+        <%= link_to "Редактировать", edit_post_path(post) %>
+        <%= link_to "Удалить", post, :confirm => "Уверены?", :method => :delete %>
       </div>
     </div>
   <% end %>
 </div>
+<%= will_paginate(@posts) %>
