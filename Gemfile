@@ -14,7 +14,7 @@ group :console do
 end
 # Use unicorn as the web server
 gem 'unicorn'
-
+gem 'rake', '0.9.2'
 # Deploy with Capistrano
 gem 'capistrano'
 
