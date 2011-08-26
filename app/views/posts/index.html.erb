@@ -23,5 +23,10 @@
       <% end %>
     </div>
   <% end %>
+  <% if session[:user_id] %>
+    <div class="action">
+      <%= link_to "Добавить новость", new_post_path %>
+    </div>
+  <% end %>  
 </div>
 <%= will_paginate(@posts) %>

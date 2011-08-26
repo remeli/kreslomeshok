@@ -14,5 +14,8 @@
       </div>
     </div>
   <% end %>
+  <div class="action">
+    <%= link_to "Добавить пользователя", new_user_path %>
+  </div>
 </div>
 <%= will_paginate(@users) %>

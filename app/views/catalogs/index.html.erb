@@ -25,6 +25,11 @@
       <% end %>
     </div>
   <% end %>  
+  <% if session[:user_id] %>
+    <div class="action" style="clear:both; margin-left:70px;">
+      <%= link_to "Добавить продукт", new_catalog_path %>
+    </div>
+  <% end %>
 </div>
 <%= will_paginate @catalogs %>
 
