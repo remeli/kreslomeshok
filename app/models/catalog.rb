@@ -16,7 +16,6 @@ class Catalog < ActiveRecord::Base
   validates :dimensions, :presence => { :message => "поле 'Габариты' обязательное"}
   
   
-  
   def to_param
     permalink
   end
