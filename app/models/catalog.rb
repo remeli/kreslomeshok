@@ -2,7 +2,7 @@ class Catalog < ActiveRecord::Base
   
   default_scope order("catalogs.id DESC")
   
-  has_attached_file :photo, :styles => { :small => "150x150>", :medium => "300x300>" },
+  has_attached_file :photo, :styles => { :small => "150x150#", :medium => "300x300#" },
                             :url => "/system/:attachment/:id/:style/:basename.:extension",
           :path => ":rails_root/public/system/:attachment/:id/:style/:basename.:extension"
   
