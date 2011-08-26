@@ -48,6 +48,6 @@ Kreslomeshok::Application.configure do
   config.active_support.deprecation = :notify
   
   # paperclip
-  Paperclip.options[:command_path] = "/usr/local/bin/"
+  Paperclip.options[:command_path] = "/usr/bin/"
   
 end
