@@ -524,3 +524,10 @@ margin-top: 5px;
 color: #ccc;
 font-size: 11px;
 }
+.like #vk_like{
+  float:left;
+}
+.like #fb-root{
+  float:left;
+  margin-left:20px;
+}
