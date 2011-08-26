@@ -9,7 +9,7 @@
     Дата добавления: <%= date(@post.created_at)  %>
   </div>
   <% if session[:user_id] %>
-    <div class="actions">
+    <div class="actions" style="margin-top:10px; margin-left:10px;">
       <%= link_to "Редактировать", edit_post_path(@post) %>
       <%= link_to "Удалить", @post, :confirm => "Уверены?", :method => :delete %>
     </div>
@@ -17,5 +17,8 @@
 </div>
 <div class="comments">
   <p class="title">Комментарии:</p>
-  ede
+  <div id="vk_comments"></div>
+  <script type="text/javascript">
+  VK.Widgets.Comments("vk_comments", {limit: 10, width: "570", attach: "*"});
+  </script>
 </div>

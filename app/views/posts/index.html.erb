@@ -10,7 +10,7 @@
         <%= link_to post.title, post %>
       </div>
       <div class="body">
-        <%= post.body %>
+        <%= raw(post.body) %>
       </div>
       <div class="info">
         Дата публикации: <%= date(post.created_at) %>
