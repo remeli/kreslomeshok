@@ -524,6 +524,10 @@ margin-top: 5px;
 color: #ccc;
 font-size: 11px;
 }
+.like{
+  margin-top:10px;
+  margin-left:10px;
+}
 .like #vk_like{
   float:left;
 }
