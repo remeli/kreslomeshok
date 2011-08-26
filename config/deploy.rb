@@ -41,6 +41,7 @@ set :unicorn_conf, "/etc/unicorn/kreslo.lagox.rb"
 set :unicorn_pid, "/var/run/unicorn/kreslo.lagox.pid"
 
 
+bundle exec
 
 # - for unicorn - #
 namespace :deploy do
