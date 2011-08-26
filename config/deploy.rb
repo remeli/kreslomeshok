@@ -45,7 +45,7 @@ set :unicorn_pid, "/var/run/unicorn/kreslo.lagox.pid"
 namespace :deploy do
   desc "Start application"
   task :start, :roles => :app do
-    run "bundle exec #{unicorn_rails} -Dc #{unicorn_conf}"
+    run "#{unicorn_rails} -Dc #{unicorn_conf}"
   end
 
   desc "Stop application"
