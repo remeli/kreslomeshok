@@ -8,12 +8,12 @@ gem 'rails', '3.0.9'
 gem 'mysql2', '~> 0.2.6'
 gem 'will_paginate', '~> 3.0.pre4'
 gem "paperclip", "~> 2.3"
-
+gem "rack", "1.2.3"
 group :console do
   gem "awesome_print"
 end
 # Use unicorn as the web server
-# gem 'unicorn'
+gem 'unicorn'
 
 # Deploy with Capistrano
 gem 'capistrano'
