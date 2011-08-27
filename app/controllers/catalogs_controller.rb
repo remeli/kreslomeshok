@@ -15,7 +15,7 @@ class CatalogsController < ApplicationController
   def show
     begin
       @catalog = Catalog.find_by_permalink(params[:id])
-      @title = @catalog.title  
+      @title = "Каталог / #{@catalog.title}"
     rescue NoMethodError
       flash[:notice] = "Нет такого продукта"
       redirect_to catalogs_path

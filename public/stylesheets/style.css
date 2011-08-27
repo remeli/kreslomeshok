@@ -525,6 +525,7 @@ color: #ccc;
 font-size: 11px;
 }
 .like{
+  clear:both;
   margin-top:10px;
   margin-left:10px;
 }
