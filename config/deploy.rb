@@ -45,7 +45,7 @@ set :unicorn_pid, "/var/run/unicorn/kreslo.lagox.pid"
 namespace :deploy do
   desc "Start application"
   task :start, :roles => :app do
-    run "#{unicorn_rails} -Dc #{unicorn_conf}"
+    run "MAGICK_THREAD_LIMIT=1 #{unicorn_rails} -Dc #{unicorn_conf}"
   end
 
   desc "Stop application"
