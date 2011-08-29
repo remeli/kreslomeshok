@@ -13,7 +13,7 @@
   <div class="info">
     <p><span>Цена:</span> <%= @catalog.price %> тенге</p>
     <p><span>Габариты:</span> <%= @catalog.dimensions %></p>
-    <p><span>Описание:</span> <%= @catalog.description %></p>
+    <p><span>Описание:</span> <%= raw(@catalog.description) %></p>
   </div>
   <div class="properties">
     <ul>
