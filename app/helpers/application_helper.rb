@@ -1,9 +1,9 @@
 module ApplicationHelper
   
   def title
-    @base_title = "KresloMeshok.kz - бескаркасная мебель, бинбэги, кресла-груши, кресла-мешки. Казахстан. Костанай"
+    @base_title = "KresloMeshok.kz"
     if @title
-      "#{@base_title} / #{@title}"
+      "#{@base_title} / #{@title} - бескаркасная мебель, бинбэги, кресла-груши, кресла-мешки. Казахстан. Костанай"
     else
       @base_title
     end
